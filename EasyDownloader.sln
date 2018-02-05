@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2005
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C0CDAF22-BAE8-4787-94CC-04080901C365}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6195DCC5-FEF2-41D5-BC18-B2A7D68877AE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyDownloader", "src\EasyDownloader\EasyDownloader.csproj", "{E4AEC9F2-0702-4E01-B80C-4EC9B2154FC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyDownloader.Tests", "EasyDownloader.Tests\EasyDownloader.Tests.csproj", "{1613C558-3C4E-4EB8-ACBE-D4F44A5283A2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E4AEC9F2-0702-4E01-B80C-4EC9B2154FC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4AEC9F2-0702-4E01-B80C-4EC9B2154FC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4AEC9F2-0702-4E01-B80C-4EC9B2154FC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4AEC9F2-0702-4E01-B80C-4EC9B2154FC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1613C558-3C4E-4EB8-ACBE-D4F44A5283A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1613C558-3C4E-4EB8-ACBE-D4F44A5283A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1613C558-3C4E-4EB8-ACBE-D4F44A5283A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1613C558-3C4E-4EB8-ACBE-D4F44A5283A2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4ABC84E8-3381-4B80-9A56-29498545E654}
+	EndGlobalSection
+EndGlobal

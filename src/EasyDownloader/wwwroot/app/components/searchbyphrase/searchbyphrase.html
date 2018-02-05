@@ -1,0 +1,48 @@
+﻿<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="input-group">
+                <input class="form-control" placeholder="Wyszukiwana fraza" ng-model="name" input type="text" required>
+                <span class="input-group-btn">
+                    <button class="btn btn-default" ng-click="SearchClick()"><i class="glyphicon glyphicon-search"></i></button>
+                    <button class="btn btn-default" ng-click="DownloadClick()"><i class="glyphicon glyphicon-download-alt"></i></button>
+                </span>
+            </div>
+            <br/>
+            <label>
+                Źródło danych:
+                <select class="form-control" ng-model="downloadsource">
+                    <option value="1">YouTube</option>
+                    <option value="2">trt</option>
+                    <option value="3">cda</option>
+                </select>
+            </label>
+        </div>
+        <br/>
+        <div class="col-md-9">
+            <table class="table table-list-search">
+                <thead>
+                <tr>
+                    <th>Wybrany</th>
+                    <th>Nazwa</th>
+                    <th>Adres URL</th>
+                    <th>Procent pobrania</th>
+                    <th>Pobrany</th>
+                    <th>Podgląd</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="x in videos">
+                    <td width="2px"><input type="checkbox" ng-checked="x.isSelected"  ng-model="x.isSelected" ng-click="updateSelectedOfVideos()"></td>
+                    <td>{{x.name}}</td>
+                    <td>{{x.url}}</td>
+                    <td>{{x.downloadedPercent}}</td>
+                    <td>{{x.isDownloadedName}}</td>
+                    <td><a class="btn btn-default" ng-click="redirectToUrl(x.url)"><i class="glyphicon glyphicon-eye-open"></i></a></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+

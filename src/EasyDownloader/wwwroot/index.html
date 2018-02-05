@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Easy downloader v1.0</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap-theme.css" />
+    <link rel="stylesheet" href="./assets/css/site.css" />
+    <link rel="stylesheet" href="./assets/css/angular-csp.css" />
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+</head>
+<body ng-app="app">
+
+    <div class="wrapper" ng-controller="IndexCtrl">
+
+        <section class="ccblue">
+            <div class="mainmenu">
+                <ul>
+                    <li ng-click="goto('home')"><i class="icon-home icon-large"></i> <main>Home</main><span>page</span></li>
+                    <li ng-click="goto('searchbyphrase')"><i class="icon-download icon-large"></i> <main>Downloader</main><span>by phrase</span></li>
+                    <li ng-click="goto('searchbylink')"><i class="icon-download icon-large"></i> <main>Downloader</main><span>by link</span></li>
+                    <li ng-click="goto('setup')"><i class="icon-cog icon-large"></i> <main>Setup</main><span>the configurations</span></li>
+                    <li><i class="icon-user icon-large"></i> <main>About</main><span>me</span></li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <div ng-view>
+
+    </div>
+
+    <div id="loading">
+        <img id="loading-image" src="./assets/images/loader.gif" alt="Loading..." />
+    </div>
+
+    <script src="./angular.js"></script>
+    <script src="./angular-route.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./app.js"></script>
+    <script src="./IndexCtrl.js"></script>
+    <script src="./app/components/home/HomeCtrl.js"></script>
+    <script src="./app/components/searchbyphrase/SearchByPhraseCtrl.js"></script>
+    <script src="./app/components/searchbylink/SearchByLinkCtrl.js"></script>
+    <script src="./app/components/setup/SetupCtrl.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>
+
+</body>
+</html>
